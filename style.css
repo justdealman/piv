@@ -213,9 +213,13 @@ button::-moz-focus-inner {
 	padding:5px 0 5px;
 	background:#666666;
 }
-.menu li a:hover, .menu li.active a {
+.menu li a:hover {
 	color:#cccccc;
 	background:#4d4d4d;
+}
+.menu li.active a {
+	color:#abaaaa !important;
+	background:#373737 !important;
 }
 
 /* Index */
