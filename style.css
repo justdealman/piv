@@ -601,6 +601,18 @@ button::-moz-focus-inner {
 	font-size:16px;
 	text-align:justify;
 }
+.list ul {
+	margin:0 0 18px;
+}
+.list ul li {
+	color:#333333;
+	font-size:16px;
+	line-height:18px;
+	list-style:none !important;
+	padding:0 0 0 18px;
+	margin:0;
+	background:url('./images/list_li.png') no-repeat left 10px;
+}
 .previmage {
 	position:relative;
 	width:960px;
