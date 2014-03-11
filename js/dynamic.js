@@ -42,13 +42,21 @@ $(document).ready(function() {
 	});
 	premax = premax-16;
 	$('.prenew > div').height(premax);
-	$('.pages .subscribe > p a').click(function() {
-		$(this).parents('.subscribe').children('div').fadeIn(150);
+	$('.subscribe > p a').click(function() {
+		$('.opacity, .subscribe_modal').fadeIn(150);
 		return false;
 	});
-	$('.pages .subscribe > div').append('<span class="close"></span>');
-	$('.pages .subscribe > div .close').click(function() {
-		$(this).parent('').fadeOut(150);
+	$('.subscribe_modal').append('<span class="close"></span>');
+	$('.subscribe_modal .close').click(function() {
+		$('.opacity, .subscribe_modal').fadeOut(150);
 		return false;
+	});
+	$('.opacity').click(function() {
+		$('.opacity, .subscribe_modal').fadeOut(150);
+		return false;
+	});
+	$(this).keydown(function(eventObject){
+		if (eventObject.which == 27)
+		$('.opacity, .subscribe_modal').fadeOut(150);
 	});
 });

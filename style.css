@@ -853,6 +853,16 @@ button::-moz-focus-inner {
 	-o-background-size:cover;
 	background-size:cover;
 }
+.opacity {
+	display:none;
+	position:fixed;
+	left:0;
+	top:0;
+	z-index:1100;
+	width:100%;
+	height:100%;
+	background:url('./images/opacity_bg.png') repeat;
+}
 
 /* Prenew */
 
@@ -1091,34 +1101,36 @@ button::-moz-focus-inner {
 .pages .subscribe > p a {
 	color:#ffffff;
 }
-.pages .subscribe > div {
+.subscribe_modal {
 	display:none;
 	position:absolute;
-	bottom:73px;
-	right:0;
+	right:50%;
+	bottom:93px;
+	z-index:2000;
 	width:244px;
 	padding:12px 20px 11px 18px;
+	margin-right:-410px;
 	background:#ffffff;
 	border:6px solid #999999;
 }
-.pages .subscribe > div p {
+.subscribe_modal p {
 	color:#000000;
 	font-size:20px;
 	line-height:24px;
 	margin:0 0 17px;
 }
-.pages .subscribe > div p span {
+.subscribe_modal p span {
 	display:block;
 	margin:0 16px 3px;
 }
-.pages .subscribe > div p input {
+.subscribe_modal p input {
 	width:212px;
 	color:#000000;
 	font-size:16px;
 	padding:14px 16px;
 	background:#e3e3e3;
 }
-.pages .subscribe > div button {
+.subscribe_modal button {
 	color:#ffffff;
 	font-size:20px;
 	line-height:24px;
@@ -1127,10 +1139,10 @@ button::-moz-focus-inner {
 	margin:5px 0 10px;
 	background:#000000;
 }
-.pages .subscribe > div button:hover {
+.subscribe_modal button:hover {
 	background:#990000;
 }
-.pages .subscribe > div .close {
+.subscribe_modal .close {
 	position:absolute;
 	right:-7px;
 	top:-7px;
@@ -1140,6 +1152,6 @@ button::-moz-focus-inner {
 	cursor:pointer;
 	background:url('./images/subscribe_close.png') no-repeat left top;
 }
-.pages .subscribe > div .close:hover {
+.subscribe_modal .close:hover {
 	background-position:0 -25px;
 }
