@@ -35,4 +35,20 @@ $(document).ready(function() {
 	$('.review > div > div:nth-child(2n) > div > img').css({'right': 'auto', 'left': '0'});
 	$('.catalog > div:nth-child(1), .catalog > div:nth-child(2), .catalog > div:nth-child(3)').css({'padding-top': '0'});
 	$('.catalog > div:nth-child(3n)').css({'padding-right': '0', 'margin-right': '0', 'background': 'none'});
+	var premax = -1;
+	$('.prenew > div').each(function() {
+		var h = $(this).height(); 
+		premax = h > premax ? h : premax;
+	});
+	premax = premax-16;
+	$('.prenew > div').height(premax);
+	$('.pages .subscribe > p a').click(function() {
+		$(this).parents('.subscribe').children('div').fadeIn(150);
+		return false;
+	});
+	$('.pages .subscribe > div').append('<span class="close"></span>');
+	$('.pages .subscribe > div .close').click(function() {
+		$(this).parent('').fadeOut(150);
+		return false;
+	});
 });
