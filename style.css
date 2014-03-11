@@ -1034,12 +1034,8 @@ button::-moz-focus-inner {
 	padding:2px 8px 1px 7px;
 	background:#000000;
 }
-.pages ul li.active a {
+.pages ul li.active a, .pages ul li a:hover {
 	background:#999999;
-}
-.pages ul li a:hover {
-	color:#000000;
-	background:#ffffff;
 }
 .pages ul li.prev a, .pages ul li.next a {
 	padding:0;
@@ -1050,16 +1046,16 @@ button::-moz-focus-inner {
 	height:25px;
 }
 .pages ul li.prev a span {
-	background:url('./images/pages_prev.png') no-repeat 7px 7px;
+	background:#000000 url('./images/pages_prev.png') no-repeat 7px 7px;
 }
 .pages ul li.prev a span:hover {
-	background-position:7px -18px;
+	background:#ffffff url('./images/pages_prev.png') no-repeat 7px -18px;
 }
 .pages ul li.next a span {
-	background:url('./images/pages_next.png') no-repeat 0 7px;
+	background:#000000 url('./images/pages_next.png') no-repeat 0 7px;
 }
 .pages ul li.next a span:hover {
-	background-position:0 -18px;
+	background:#ffffff url('./images/pages_next.png') no-repeat 0 -18px;
 }
 .pages ul li.last {
 	font-size:14px;
