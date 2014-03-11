@@ -919,12 +919,9 @@ button::-moz-focus-inner {
 .prenew > div ul li a {
 	color:#cccccc;
 }
-.prenew > div ul li:first-child a {
+.prenew > div ul li a:hover {
 	color:#ffffff;
 	text-decoration:none;
-}
-.prenew > div ul li:first-child a:hover {
-	text-decoration:underline;
 }
 .news {
 	width:820px;
