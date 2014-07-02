@@ -27,10 +27,10 @@ $(document).ready(function() {
 		var min = $(this).children('img').height()+7;
 		$(this).css({'min-height': min+'px'});
 	});
-	$('.list > div:nth-child(2n) h2').css({'text-align': 'right'});
-	$('.list > div:nth-child(2n) > div').css({'padding': '0 200px 0 0'});
-	$('.list > div:nth-child(2n) > div > div').css({'left': 'auto', 'right': '0'});
-	$('.review > div > div:nth-child(2n) h3').css({'text-align': 'right', 'margin': '0 70px 12px 240px'});
+	$('.list > div > div:nth-child(2n) h2').css({'text-align': 'right'});
+	$('.list > div > div:nth-child(2n) > div').css({'padding': '0 200px 0 0'});
+	$('.list > div > div:nth-child(2n) > div > div').css({'left': 'auto', 'right': '0'});
+	$('.review > div > div:nth-child(2n) h3').css({'text-align': 'right', 'margin': '0 70px 24px 240px'});
 	$('.review > div > div:nth-child(2n) > div').css({'padding': '0 70px 0 240px'});
 	$('.review > div > div:nth-child(2n) > div > img').css({'right': 'auto', 'left': '0'});
 	$('.catalog > div:nth-child(1), .catalog > div:nth-child(2), .catalog > div:nth-child(3)').css({'padding-top': '0'});
